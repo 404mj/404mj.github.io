@@ -2,10 +2,10 @@
 layout: post
 title: "Markdown Gramma"
 subtitle: "A brief introduction about Markdown Grammar. "
-date: 2016-03-29
-author: Benjamin
+date: 2016-08-28
+author: me
 category: coding
-tags: code markdown github
+tags: writing markdown
 finished: true
 ---
 
