@@ -2,7 +2,6 @@
 layout: page
 title: Tags
 subtitle: Keep Calm and Carry On.
-permalink: /tags/
 ---
 
 <section class="post-tags">
@@ -14,7 +13,7 @@ permalink: /tags/
     {% endfor %}
     {% else %}
     {% for tag in tags_list %}
-    <a class="post-tags-item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+    <a class="post-tags-item" href="#dir{{ forloop.index0 }}">{{ tag[0] }}</a>
     {% endfor %}
     {% endif %}
     
@@ -25,15 +24,16 @@ permalink: /tags/
 <hr>
 
     {% for tag in site.tags  %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] | capitalize }}</h2>
-    
+    <h2>{{ tag[0] | capitalize }}</h2>
+    <!--id="{{ tag[0] | capitalize }}" //  dir0 dir1 锚点问题 产生的不对 id='{{ tag[0] | slugify }}'-->
+    <!-- tags是一个数组，每个数组还有两个元素 第一个是tag名字第二个是该tag下的文章，也是一个数组需要遍历 -->
     <ul>
         {% assign pages_list = tag[1] %}
         {% for post in pages_list reversed %}
         {% if post.title != null %}
         {% if group == null or group == post.group %}
         <li>
-		<p><a href="{{ site.url }}{{ post.url | prepend: site.baseurl }}">
+		<p><a href="{{ post.url | prepend: site.baseurl }}">
 			{{ post.title }}</a><span class="date"><time datetime="{{ post.date | date_to_long_string }}"> - {{ post.date | date_to_long_string }}</time></span></p>
         </li>
         {% endif %}

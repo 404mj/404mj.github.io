@@ -3,10 +3,8 @@ layout: post
 title: "Markdown Gramma"
 subtitle: "A brief introduction about Markdown Grammar. "
 date: 2016-08-28
-author: me
-category: coding
-tags: writing markdown
-finished: true
+category: coding writing
+tags: markdown
 ---
 
 ## Heading
