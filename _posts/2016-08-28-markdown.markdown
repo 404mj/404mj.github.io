@@ -3,7 +3,7 @@ layout: post
 title: "Markdown Gramma"
 subtitle: "A brief introduction about Markdown Grammar. "
 date: 2016-08-28
-category: [Coding, Writing]
+category: [Writing]
 tags: markdown
 ---
 
