@@ -1,0 +1,23 @@
+#+BEGIN_HTML
+---
+layout: post
+title: First Test Touch
+categories: [Writing]
+tags: 
+---
+#+END_HTML
+
+* 你好
+*** 二级标题
+拖延症吗？那个关于程序员的笑话不是取笑是事实呀。程序员花了好几天大服务器写脚本，写页面，设计布局，把
+自己的博客弄好，然后研究和工具的自动化，实现了在 编辑器中一键发布博客， 然后满意的睡觉了 。从此没有
+一篇博客出现。哈哈，这个人会是你吗？反正我中枪了。
+
+#+BEGIN_HTML
+<!-- more-forword -->
+#+END_HTML
+
+
+#+BEGIN_HTML
+<!-- more -->
+#+END_HTML
