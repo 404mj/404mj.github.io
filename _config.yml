@@ -19,6 +19,6 @@ permalink: pretty
 #layout: post
 #paginate_path: /page:num
 markdown: kramdown
-#highlighter: Pygments 
+highlighter: Pygments 
 finished: true
 author: me

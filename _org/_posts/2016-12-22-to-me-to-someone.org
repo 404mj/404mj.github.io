@@ -5,7 +5,7 @@ title: "To Me To SomeOne"
 subtitle: "遇见"
 date: 2016-12-22
 categories: [Writing]
-tags: [SomeOne]
+tags: [Someone]
 ---
 #+END_HTML
 

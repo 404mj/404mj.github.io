@@ -4,6 +4,7 @@ title: Tags
 subtitle: Keep Calm and Carry On.
 ---
 
+<!-- 上方的标签 -->
 <section class="post-tags">
     {% assign tags_list = site.tags %}
     
@@ -22,9 +23,10 @@ subtitle: Keep Calm and Carry On.
 </section>
 
 <hr>
+<!--文章列表 -->
 
     {% for tag in site.tags  %}
-    <h2>{{ tag[0] | capitalize }}</h2>
+    <h2>{{ tag[0] | capitalize }}</h2><!-- 每个tag做标题 -->
     <!--id="{{ tag[0] | capitalize }}" //  dir0 dir1 锚点问题 产生的不对 id='{{ tag[0] | slugify }}'-->
     <!-- tags是一个数组，每个数组还有两个元素 第一个是tag名字第二个是该tag下的文章，也是一个数组需要遍历 -->
     <ul>
@@ -33,8 +35,8 @@ subtitle: Keep Calm and Carry On.
         {% if post.title != null %}
         {% if group == null or group == post.group %}
         <li>
-		<p><a href="{{ post.url | prepend: site.baseurl }}">
-			{{ post.title }}</a><span class="date"><time datetime="{{ post.date | date_to_long_string }}"> - {{ post.date | date_to_long_string }}</time></span></p>
+		    <p><a href="{{ post.url | prepend: site.baseurl }}">
+			    {{ post.title }}</a><span class="date"><time datetime="{{ post.date | date_to_long_string }}"> - {{ post.date | date_to_long_string }}</time></span></p>
         </li>
         {% endif %}
         {% endif %}
