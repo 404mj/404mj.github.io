@@ -26,7 +26,7 @@ subtitle: Keep Calm and Carry On.
 <!--文章列表 -->
 
     {% for tag in site.tags  %}
-    <h2>{{ tag[0] | capitalize }}</h2><!-- 每个tag做标题 -->
+    <h2 id="dir{{ forloop.index0 }}">{{ tag[0] | capitalize }}</h2><!-- 每个tag做标题 -->
     <!--id="{{ tag[0] | capitalize }}" //  dir0 dir1 锚点问题 产生的不对 id='{{ tag[0] | slugify }}'-->
     <!-- tags是一个数组，每个数组还有两个元素 第一个是tag名字第二个是该tag下的文章，也是一个数组需要遍历 -->
     <ul>

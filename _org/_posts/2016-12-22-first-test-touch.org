@@ -16,6 +16,21 @@ tags:
 分段了吗分段了吗分段了吗分段了吗？？？
 
     缩进了吗缩进了吗缩进了吗缩进了吗？？？
+
+*** 测试图片
+put image in /img/somename.fileextension
+[[/img/emacs_mindmap.jpg]]
+<br/>换一种方式
+#+BEGIN_HTML
+<!-- more-forword -->
+<img src="/img/emacs_mindmap.jpg" alt="emacs_mindmap.jpg" />
+#+END_HTML
+可以啦！！！
+org转换html的时候还是不和markdown不一样。具体以后再说吧。
+访问图片的路径不匹配
+只能使用自定义书写img标签来解决在暂时这样解决了
+
+
 #+BEGIN_HTML
 <!-- more-forword -->
 #+END_HTML
