@@ -30,6 +30,17 @@ org转换html的时候还是不和markdown不一样。具体以后再说吧。
 访问图片的路径不匹配
 只能使用自定义书写img标签来解决在暂时这样解决了
 
+*** 测试JS
+测试javaScript
+#+BEGIN_HTML
+<script>
+function saySth(){
+    alert("hello world!");
+}
+</script>
+
+<button onclick = "saySth()">你来点击一下呀</button>
+#+END_HTML
 
 #+BEGIN_HTML
 <!-- more-forword -->
